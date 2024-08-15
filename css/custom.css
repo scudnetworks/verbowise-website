@@ -162,6 +162,7 @@ button {
 }
 .list-wrapper {
     position: relative;
+    margin-top: 3rem;
   }
   
   .button {
@@ -182,4 +183,48 @@ button {
   
   .button--next {
     right: 1.5rem;
+  }
+  .list {
+    display: flex;
+    gap: 8px;
+    padding: 16px;
+  
+    list-style: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    /* Hide scrollbar in Firefox */
+  scrollbar-width: none;
+
+  /* Hide scrollbar in IE and Edge */
+  -ms-overflow-style: none;
+  }
+  
+  .item {
+    align-self:center;
+    flex-shrink: 0;
+    width: 75%;
+    height: 96vh;
+  
+    background-color: #FFF;
+  
+    scroll-snap-align: center;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  
+    font-family: sans-serif;
+    font-size: 64px;
+    font-weight: bold;
+  }
+
+  .custom-card-text{
+    font: 40px sans-serif;
+    font-weight: bold;
+  }
+  .list::-webkit-scrollbar {
+    display: none;
   }
