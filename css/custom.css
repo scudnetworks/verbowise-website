@@ -35,13 +35,13 @@ button {
 }
 
 .cta-green {
-    background: #00FFAD;
+    background: #90cc42;
     color: #192440;
 }
 
 .cta-green:hover {
     color: #ffffff;
-    background: #00e69c;
+    background: #90cc42;
 }
 
 .cta-blue {
@@ -84,11 +84,11 @@ button {
 }
 
 #feature-first {
-    background: linear-gradient(168deg, #ffffff 55%, #00FFAD 0);
+    background: linear-gradient(168deg, #ffffff 55%, #90cc42 0);
 }
 
 #feature-last {
-    background: #00FFAD;
+    background: #90cc42;
 }
 
 /********** price table **********/
@@ -160,3 +160,26 @@ button {
         font-size: 3.6rem;
     }
 }
+.list-wrapper {
+    position: relative;
+  }
+  
+  .button {
+    position: absolute;
+    top: 50%;
+  
+    width: 3rem;
+    height: 3rem;
+  
+    transform: translateY(-50%);
+  }
+  
+  .button--previous {
+    left: 1.5rem;
+  
+    transform: rotate(180deg);
+  }
+  
+  .button--next {
+    right: 1.5rem;
+  }
